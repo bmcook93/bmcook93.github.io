@@ -1,0 +1,14 @@
+﻿  test.cpp
+C:\Users\Brandon\source\repos\InvestmentTest\test.cpp(157,2): warning C4834: discarding return value of function with [[nodiscard]] attribute
+  (compiling source file '/test.cpp')
+  
+C:\Users\Brandon\source\repos\InvestmentTest\test.cpp(158,2): warning C4834: discarding return value of function with [[nodiscard]] attribute
+  (compiling source file '/test.cpp')
+  
+C:\Users\Brandon\source\repos\InvestmentTest\test.cpp(159,2): warning C4834: discarding return value of function with [[nodiscard]] attribute
+  (compiling source file '/test.cpp')
+  
+C:\Users\Brandon\source\repos\InvestmentTest\test.cpp(160,2): warning C4834: discarding return value of function with [[nodiscard]] attribute
+  (compiling source file '/test.cpp')
+  
+  InvestmentTest.vcxproj -> C:\Users\Brandon\source\repos\InvestmentTest\x64\Debug\InvestmentTest.exe
