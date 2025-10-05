@@ -1,9 +1,0 @@
-﻿  Export.cpp
-  Import.cpp
-  Investment.cpp
-  UserInterface.cpp
-C:\Users\Brandon\Documents\SNHU\Term 19\CS-499\AirgeadBanking-main\UserInterface.cpp(113,34): warning C4101: 'e': unreferenced local variable
-C:\Users\Brandon\Documents\SNHU\Term 19\CS-499\AirgeadBanking-main\UserInterface.cpp(120,34): warning C4101: 'e': unreferenced local variable
-  main.cpp
-  Generating Code...
-  AirgeadBankingApp.vcxproj -> C:\Users\Brandon\Documents\SNHU\Term 19\CS-499\AirgeadBanking-main\x64\Debug\AirgeadBankingApp.exe

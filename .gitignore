@@ -1,0 +1,40 @@
+# Build directories
+[Bb]in/
+[Oo]bj/
+x64/
+x86/
+build/
+out/
+Debug/
+Release/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.vcxproj.user
+*.sdf
+*.opensdf
+*.VC.db
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# CMake cache and build files
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Personal files
+*.env
+*.local
+*.config
