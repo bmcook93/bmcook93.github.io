@@ -1,0 +1,3 @@
+C:\Users\Brandon\source\repos\InvestmentTest\x64\Debug\gtest.pdb
+C:\Users\Brandon\source\repos\InvestmentTest\x64\Debug\gtest_main.pdb
+C:\Users\Brandon\source\repos\InvestmentTest\InvestmentTest\x64\Debug\Investme.E9A8A236.Up2Date

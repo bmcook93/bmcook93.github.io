@@ -1,0 +1,11 @@
+InitialInvestment,MonthlyDeposit,AnnualInterest,Years,TotalWithoutDeposits,TotalWithDeposit
+1000,100,5,3,1157.63,1466.36
+
+YearlyBalancesWithoutDeposits
+1050.0,1102.5,1157.63
+YearlyInterestsWithoutDeposits
+50.0,52.5,55.13
+YearlyBalancesWithDeposits
+1165.0,1232.25,1302.86
+YearlyInterestsWithDeposits
+65.0,67.25,70.61

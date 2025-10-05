@@ -1,0 +1,20 @@
+/************************************************************
+** UPDATE: Header file for Export function                 **
+** Name: Export.h                                          **
+** Author: Brandon Cook                                    **
+*************************************************************/
+
+#include "pch.h"
+
+#pragma once
+#ifndef EXPORT_H
+#define EXPORT_H
+
+#include "Investment.h"
+
+class Export {
+public:
+    static void run(Investment& userInvestment); // one method to export
+};
+
+#endif

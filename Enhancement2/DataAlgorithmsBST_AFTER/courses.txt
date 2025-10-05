@@ -1,0 +1,52 @@
+CSCI100,Introduction to Computer Science
+CSCI101,Introduction to Programming in C++,CSCI100
+CSCI102,Introduction to Web Development,CSCI100
+CSCI103,Introduction to Python,CSCI100
+CSCI104,Computer Ethics,CSCI100
+CSCI105,Digital Logic and Computer Organization,CSCI100
+CSCI106,Foundations of Software Tools,CSCI100
+MATH201,Discrete Mathematics
+MATH202,Calculus I
+MATH203,Calculus II,MATH202
+MATH204,Linear Algebra,MATH202
+MATH205,Probability and Statistics,MATH202
+CSCI200,Data Structures,CSCI101
+CSCI201,Object-Oriented Design,CSCI101
+CSCI202,Database Fundamentals,CSCI101
+CSCI203,Computer Architecture,CSCI105
+CSCI204,Introduction to Cybersecurity,CSCI101
+CSCI205,Introduction to Artificial Intelligence,CSCI103,MATH201
+CSCI206,Computer Networks,CSCI105
+CSCI207,Programming Languages,CSCI101
+CSCI208,Mobile App Development,CSCI201
+CSCI209,Game Development,CSCI201
+CSCI210,Software Testing and Quality Assurance,CSCI201
+CSCI211,Unix Systems Programming,CSCI101
+CSCI212,Functional Programming,CSCI101
+CSCI213,Parallel Computing,CSCI200
+CSCI214,Human-Computer Interaction,CSCI102
+CSCI215,Data Visualization,CSCI103,MATH205
+CSCI216,Machine Learning Basics,CSCI200,MATH205
+CSCI300,Introduction to Algorithms,CSCI200,MATH201
+CSCI301,Advanced Programming in C++,CSCI101
+CSCI302,Advanced Python Programming,CSCI103
+CSCI303,Compiler Design,CSCI207,CSCI300
+CSCI304,Theory of Computation,MATH201
+CSCI305,Numerical Methods,MATH203,MATH204
+CSCI306,Big Data Systems,CSCI202,CSCI300
+CSCI307,Web Application Development,CSCI102,CSCI201
+CSCI308,Cloud Computing,CSCI206
+CSCI309,Advanced Cybersecurity,CSCI204,CSCI206
+CSCI310,AI and Robotics,CSCI205,CSCI216
+CSCI311,Natural Language Processing,CSCI205,MATH205
+CSCI312,Computer Graphics,CSCI200,MATH204
+CSCI313,Quantum Computing,CSCI300,MATH204
+CSCI314,Bioinformatics,CSCI200,MATH205
+CSCI315,Advanced Database Systems,CSCI202,CSCI300
+CSCI316,Data Mining,CSCI216
+CSCI317,Ethical Hacking,CSCI204
+CSCI318,Virtual and Augmented Reality,CSCI312
+CSCI319,Software Engineering Project,CSCI210,CSCI300
+CSCI320,Capstone Project,CSCI319,CSCI400
+CSCI350,Operating Systems,CSCI300
+CSCI400,Large Software Development,CSCI301,CSCI350
