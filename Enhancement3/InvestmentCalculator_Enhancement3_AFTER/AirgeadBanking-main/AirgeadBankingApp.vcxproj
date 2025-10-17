@@ -191,6 +191,7 @@
   <ItemGroup>
     <ClCompile Include="Export.cpp" />
     <ClCompile Include="Import.cpp" />
+    <ClCompile Include="InvestmentStorage.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Investment.cpp" />
     <ClCompile Include="User.cpp" />
@@ -200,6 +201,7 @@
     <ClInclude Include="Export.h" />
     <ClInclude Include="Import.h" />
     <ClInclude Include="Investment.h" />
+    <ClInclude Include="InvestmentStorage.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="UserInterface.h" />
   </ItemGroup>

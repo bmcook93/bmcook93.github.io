@@ -12,6 +12,7 @@
 #include "UserInterface.h"
 #include "Import.h"
 #include "Export.h"
+#include "InvestmentStorage.h"
 
 constexpr double MAX_INITIAL_INVESTMENT = 10000000.0; // max initial investment amount
 constexpr double MAX_MONTHLY_DEPOSIT = 10000.0; // max monthly deposit amount
@@ -41,7 +42,8 @@ void UserInterface::ui() {
         std::cout << "2. Display Investment Report" << std::endl;
 		std::cout << "3. Import Data" << std::endl;
 		std::cout << "4. Export Data" << std::endl;
-		std::cout << "5. Quit" << std::endl;
+        std::cout << "5. Load Investment" << std::endl;
+		std::cout << "6. Quit" << std::endl;
 		std::cin >> choice;
 
 		if (choice == "1") { // take investment data
@@ -60,8 +62,11 @@ void UserInterface::ui() {
 		}
 		else if (choice == "4") { // export a report from csv file
             exportReport();
-		} 
-        else if (choice == "5") {// end loop
+		} else if (choice == "5") { // load from database
+            InvestmentStorage storage(db);
+            storage.retrieveInvestment(currentUser, userInvestment);
+        }
+        else if (choice == "6") {// end loop
             run = false;
         }
 		else { // error out
@@ -126,6 +131,11 @@ void UserInterface::inputInvestmentData() {
         std::cout << "Error when calculating total with deposits, possible overflow." << std::endl;
         return;
     }
+
+    // save to database
+    InvestmentStorage storage(db);
+    storage.saveInvestment(currentUser, userInvestment);
+
 }
 
 // display investment report
