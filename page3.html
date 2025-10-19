@@ -12,24 +12,27 @@
 
 <div style="text-align:center;">
     <div style="display:inline-block; text-align:left; width:75%; max-width:1000px;">
-      <h2 style="color:#189ab4;">Course Planner Application</h2>
-      <p>
-            
-      </p>
+        <h2 style="color:#189ab4;">Course Planner Application</h2>
+        <p style="color:#05445e; font-size:18px; line-height:1.6; margin:10px auto; text-align:justify;">
+            This artifact is a program that I developed during my time in CS-300: Data Structures and Algorithms. It consists of a binary search tree (BST) used to sort through a list of courses, creating a catalogue that can be browsed through to learn about a course and its prerequisite courses. The purpose of this project in CS-300 was to display knowledge of data algorithms.
+        </p>
 
-      <h2 style="color:#189ab4;">Data Algorithms</h2>
-      <p>
-        
-      </p>
+        <h2 style="color:#189ab4;">Data Algorithms</h2>
+        <p style="color:#05445e; font-size:18px; line-height:1.6; margin:10px auto; text-align:justify;">
+            A standard BST is an effective tool, but it is limited by the structure of the data that is fed into it. BSTs sort items into a tree alphanumerically, so if the list is already alphabetized prior, it can lead to an unbalanced list. The dataset used consists of 50 different courses, meaning that a single search can take as many as 50 comparisons for a single search if the tree was unbalanced. This is not optimal; in larger datasets, optimization is important. The number of node searches in the tree should be limited to the lowest maximum number of searches possible, in order to operate efficiently.
+        </p>
+        <p style="color:#05445e; font-size:18px; line-height:1.6; margin:10px auto; text-align:justify;">
+            That is why I refactored the BST into an AVL tree, which is a self-balancing BST. Nodes have a balance factor and a height. When added to a tree, the balance factor and height are updated. If the balance factor, which determines if one of the branches in the tree has grown too large, exceeds -1 or 1, the node on the tree is ‘rotated’ to the next available branch, which balances the BST. In this way, a properly implemented AVL tree structure, with a dataset of 50, has a maximum possible number of searches of 7. This result can be visualized by the printed tree (sideways) which displays what the BST looks like after being properly balanced. An optimized tree can search through large datasets quickly, which is important in situations of data analysis or information gathering. For the case here, it could be a useful algorithm to use in a course planner.
+        </p>
 
-      <h2 style="color:#189ab4;">Artifact Link</h2>
-      <ul>
-        <li><a href="https://github.com/bmcook93/bmcook93.github.io/tree/main/Enhancement2" style="color:#05445e;">Data Algorithms (Before & After)</a></li>
-      </ul>
+        <h2 style="color:#189ab4;">Artifact Link</h2>
+        <ul>
+            <li><a href="https://github.com/bmcook93/bmcook93.github.io/tree/main/Enhancement2" style="color:#05445e;">Data Algorithms (Before & After)</a></li>
+        </ul>
       
-      <h2 style="color:#189ab4;">Flowchart</h2>
-        <h3 style="color:#0f7991;">Data Algorithms</h3>
-      <img src="images/flowchart1.png" alt="Data Algorithm Flowchart" style="display:block; margin:20px auto; border:1px solid #05445e; width:500px;">
+        <h2 style="color:#189ab4;">Flowchart</h2>
+            <h3 style="color:#0f7991;">Data Algorithms</h3>
+        <img src="images/flowchart1.png" alt="Data Algorithm Flowchart" style="display:block; margin:20px auto; border:1px solid #05445e; width:500px;">
         
     </div>
 </div>
