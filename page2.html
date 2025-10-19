@@ -11,32 +11,41 @@
 
 <div style="text-align:center;">
     <div style="display:inline-block; text-align:left; width:75%; max-width:1000px;">
-      <h2 style="color:#189ab4;">Financial Investment Application</h2>
-      <p>
-            
-      </p>
+        <h2 style="color:#189ab4;">Financial Investment Application</h2>
+        <p style="color:#05445e; font-size:18px; line-height:1.6; margin:10px auto; text-align:justify;">
+            The artifact used is an investment calculator console application that I developed during CS-210: Programming Languages. A user can enter in an initial investment amount, a monthly deposit, an annual interest rate, and a number of years for the investment to grow. The totals both with and without monthly deposits are calculated and displayed year by year in a formatted table for each outcome. It is a tool that can be used to compare the difference in growth when adding an additional monthly deposit to an investment.
+        </p>
 
-      <h2 style="color:#189ab4;">Software Engineering & Design</h2>
-      <p>
+        <h2 style="color:#189ab4;">Software Engineering & Design</h2>
+        <p style="color:#05445e; font-size:18px; line-height:1.6; margin:10px auto; text-align:justify;">
+            When I was creating the unit tests, I modeled the frame loosely on an assignment I had completed during CS 405: Secure Coding, where I had to add a few unit tests to a template involving operations performed on a collection. The tests used here are vastly different, but using that as a reference point helped refamiliarize myself with Google Tests and have a decent head start on the work. I did not begin to implement these tests until the end of the project, focusing on refactoring for the initial bulk of the work. I implemented a shell for the Export and Import functions following splitting up the main function from UserInterface, which is where I began to run into problems. Exports worked fine, but when reimporting, there were several issues. The biggest realization was that, in the original program, I was performing calculations and printing the output to the screen at the same time. The year-over-year data was not being stored in any way, only the end results, using a method that incremented the total with and without deposits over a loop for each.
+        </p>
+        <p style="color:#05445e; font-size:18px; line-height:1.6; margin:10px auto; text-align:justify;">
+            I eventually implemented vectors for each item, the yearly balances and the interest gained each year, for both with and without the monthly deposits. This allowed all of that information to be written to a file, which could successfully be imported and displayed. At first, I ran into an issue following this where output was being displayed multiple times, but I realized that I was not clearing the vectors after each import, so it was doubling the values. Resolving this, I worked on adding some limitations and reformatting the output to be cleaner and easier to read. I began by implementing some realistic limitations, such as $10,000,000 as a maximum initial investment, $10,000 as a maximum monthly deposit, 100% as a maximum interest, and 30 years as a maximum amount of time. I implemented most of these limitations and measures into the if statements that assign them, in an effort to minimize the lines of code. I also tried to keep it as easy to read as possible, by implementing constants for the maximum numbers and using those in the statements, rather than placing the number directly. In future iterations, this will reduce confusion as to what the number is meant to represent.
+        </p>        
         
-      </p>
-        
-      <h2 style="color:#189ab4;">Databases</h2>
-      <p>
-        
-      </p>
+        <h2 style="color:#189ab4;">Databases</h2>
+        <p style="color:#05445e; font-size:18px; line-height:1.6; margin:10px auto; text-align:justify;">
+            For the database enhancement, I worked with MySQL to develop a database that will connect with the system, allowing users to create an account and store their investments for later viewing. This will set a framework for later work to adapt this program into a live financial system that can be connected to a bank or brokerage to assist users in building a portfolio for their investments. The MySQL database currently uses three tables in the database schema: users, investments, and yearly_results. The users table stores information about users, adding in new ID’s when a user registers. The investments table is linked to each individual user, storing their investment plans. The yearly_results table is linked to each user’s investments, providing the year over year growth of individual investments. I believe this showcases my ability to adapt to new environments, as I have never used MySQL before, and also have never connected a database to a C++ program.
+        </p>
+        <p style="color:#05445e; font-size:18px; line-height:1.6; margin:10px auto; text-align:justify;">
+            I adjusted the main.cpp file, as well as implemented two new files: User.h and User.cpp. I experienced several difficulties in setting this enhancement up. My first exposure to MySQL involved downloading the server and struggling to set it up; I did not want to run a dedicated server on my local machine, so I ended up using a portable .zip version instead. After creating the tables, I needed to figure out how to connect it to C++. Originally, I was attempting to use the C++ connector on MySQL’s download page, but I ran into significant challenges with managing libraries and linking them to my environment. I had spent plenty of time going through the documentation and learning about the proper API usage, but I ended up struggling with the actual execution. 
+        </p>
+        <p style="color:#05445e; font-size:18px; line-height:1.6; margin:10px auto; text-align:justify;">
+            I ended up installing mysql-connector-cpp using vcpkg, which automatically connected to my environment, and I learned a different API: X DevAPI, which is a more modern interface. In hindsight, it is much simpler and more efficient than the cppconn library, and I managed to implement connection to the database and users table in this build. For the final enhancement, I implemented the remaining functionality, storing data into investments and yearly_results for later access. 
+        </p>
 
-      <h2 style="color:#189ab4;">Artifact Links</h2>
-      <ul>
-        <li><a href="https://github.com/bmcook93/bmcook93.github.io/tree/main/Enhancement1" style="color:#05445e;">Software Engineering & Design (Before & After)</a></li>
-        <li><a href="https://github.com/bmcook93/bmcook93.github.io/tree/main/Enhancement3" style="color:#05445e;">Database Integration (Before & After)</a></li>
-      </ul>
+        <h2 style="color:#189ab4;">Artifact Links</h2>
+        <ul>
+            <li><a href="https://github.com/bmcook93/bmcook93.github.io/tree/main/Enhancement1" style="color:#05445e;">Software Engineering & Design (Before & After)</a></li>
+            <li><a href="https://github.com/bmcook93/bmcook93.github.io/tree/main/Enhancement3" style="color:#05445e;">Database Integration (Before & After)</a></li>
+        </ul>
       
-      <h2 style="color:#189ab4;">Flowcharts</h2>
-        <h3 style="color:#0f7991;">Software Engineering</h3>
-      <img src="images/flowchart1.png" alt="Software Engineering Flowchart" style="display:block; margin:20px auto; border:1px solid #05445e; width:500px;">
-        <h3 style="color:#0f7991;">Databases</h3>
-      <img src="images/flowchart3.png" alt="Database Flowchart" style="display:block; margin:20px auto; border:1px solid #05445e; width:500px;">
+        <h2 style="color:#189ab4;">Flowcharts</h2>
+            <h3 style="color:#0f7991;">Software Engineering</h3>
+        <img src="images/flowchart1.png" alt="Software Engineering Flowchart" style="display:block; margin:20px auto; border:1px solid #05445e; width:500px;">
+            <h3 style="color:#0f7991;">Databases</h3>
+        <img src="images/flowchart3.png" alt="Database Flowchart" style="display:block; margin:20px auto; border:1px solid #05445e; width:500px;">
         
     </div>
 </div>
